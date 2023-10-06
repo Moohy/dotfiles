@@ -1,7 +1,6 @@
 ---
 - name: Install
-  kewlfft.aur.aur:
-    use: yay
+  dnf:
     state: latest
-    name:
-      - go-jsonnet
+    name: golang-github-jsonnet-bundler
+  become: yes

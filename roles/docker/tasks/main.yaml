@@ -1,6 +1,6 @@
 ---
 - name: Install
-  ansible.builtin.package:
+  dnf:
     name:
       - docker
       - docker-compose

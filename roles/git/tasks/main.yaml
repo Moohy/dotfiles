@@ -1,8 +1,7 @@
 ---
 - name: Install
-  ansible.builtin.package:
-    name:
-      - git
+  dnf:
+    name: git
     state: latest
   become: yes
 

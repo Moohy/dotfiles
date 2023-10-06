@@ -1,7 +1,6 @@
 ---
 - name: Install
-  ansible.builtin.package:
-    name:
-      - terraform
+  dnf:
+    name: terraform
     state: latest
   become: yes

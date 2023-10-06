@@ -1,7 +1,6 @@
 ---
 - name: Install
-  ansible.builtin.package:
-    name:
-      - httpie
+  dnf:
+    name: httpie
     state: latest
   become: yes

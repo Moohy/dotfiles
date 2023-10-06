@@ -1,7 +1,17 @@
 ---
 - name: Install
-  kewlfft.aur.aur:
-    use: yay
+  community.general.copr:
+    state: enabled
+    name: mcp/pulumi
+
+---
+- name: Pre reqs Install
+  community.general.copr:
+    state: enabled
+    name: atim/bottom
+
+- name: Install
+  dnf:
     state: latest
-    name:
-      - postman-bin
+    name: bottom
+  become: yes

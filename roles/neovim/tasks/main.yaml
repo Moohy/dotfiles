@@ -1,6 +1,6 @@
 ---
 - name: Dependencies
-  ansible.builtin.package:
+  dnf:
     name:
       - base-devel
       - cmake

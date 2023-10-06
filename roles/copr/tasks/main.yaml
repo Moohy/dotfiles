@@ -1,6 +1,6 @@
 ---
 - name: Install
   dnf:
-    name: bat
     state: latest
+    name: copr-cli
   become: yes

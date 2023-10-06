@@ -1,7 +1,6 @@
 ---
 - name: Install
-  ansible.builtin.package:
-    name:
-      - github-cli
+  dnf:
+    name: github-cli
     state: latest
   become: yes

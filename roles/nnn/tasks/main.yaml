@@ -1,7 +1,6 @@
 ---
 - name: Install
-  ansible.builtin.package:
-    name:
-      - nnn
+  dnf:
+    name: nnn
     state: latest
   become: yes

@@ -1,7 +1,6 @@
 ---
 - name: Install
-  kewlfft.aur.aur:
-    use: yay
+  dnf:
     state: latest
-    name:
-      - aws-cli-v2-bin
+    name: awscli
+  become: yes
